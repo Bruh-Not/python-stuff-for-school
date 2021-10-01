@@ -10,18 +10,17 @@ def multiply(x,y):
 def divide(x,y):
     return x/y
     
-print('What do you want to do?')
-print('Addition')
-print('subtraction')
-print('multiplication')
-print('division')
+print('Addition (+)')
+print('subtraction (-)')
+print('multiplication (*)')
+print('division (/)')
 
 while True:
-    choice=input('Choose (+,-,*,/):')
+    choice=input('Choose [+,-,*,/]: ')
     
     if choice in('+','-','*','/'):
-        num1 = float(input('Type first number: '))
-        num2 = float(input('Type second number: '))
+        num1 = float(input('First number: '))
+        num2 = float(input('Second number: '))
         
         if choice == '+':
             print(num1, '+', num2, '=', add(num1, num2))
@@ -35,8 +34,8 @@ while True:
         elif choice == '/':
             print(num1, '/', num2, '=', divide(num1, num2))
             
-        next_calculation = input('Want to do another one? (yes/no)')
-        if next_calculation == 'no':
+        next_calculation = input('Do another one? [y/n]: ')
+        if next_calculation == 'n':
             break
         
     else:
