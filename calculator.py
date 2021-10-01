@@ -11,14 +11,15 @@ def divide(x,y):
     return x/y
     
 print('Addition (+)')
-print('subtraction (-)')
-print('multiplication (*)')
-print('division (/)')
+print('Subtraction (-)')
+print('Multiplication (*)')
+print('Division (/)')
+print('Exponent (^)')
 
 while True:
-    choice=input('Choose [+,-,*,/]: ')
+    choice=input('Choose [+,-,*,/,^]: ')
     
-    if choice in('+','-','*','/'):
+    if choice in('+','-','*','/','^'):
         num1 = float(input('First number: '))
         num2 = float(input('Second number: '))
         
@@ -33,6 +34,9 @@ while True:
             
         elif choice == '/':
             print(num1, '/', num2, '=', divide(num1, num2))
+            
+        elif choice == '^':
+            print(num1, '^', num2, '=', pow(num1, num2))
             
         next_calculation = input('Do another one? [y/n]: ')
         if next_calculation == 'n':
