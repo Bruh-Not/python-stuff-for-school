@@ -10,6 +10,8 @@ def multiply(x,y):
 def divide(x,y):
     return x/y
     
+print('What do you want to do?')
+print(' ')
 print('Addition (+)')
 print('Subtraction (-)')
 print('Multiplication (*)')
@@ -37,7 +39,7 @@ while True:
             
         elif choice == '^':
             print(num1, 'to the power of', num2, 'is', pow(num1, num2))
-            
+
         next_calculation = input('Do another one? [y/n]: ')
         if next_calculation == 'n':
             break
